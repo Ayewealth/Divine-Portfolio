@@ -162,7 +162,7 @@ window.addEventListener('scroll', scrollUp)
 
 /*==================== TypeScript ====================*/
 let typingEffect = new Typed(".multiText",{
-    strings : ["Hi, I'am Prince", "A Frontend Developer", "A Designer", "A Backend Developer"],
+    strings : ["Hi, I'm Prince", "A Frontend Developer", "A Designer", "A Backend Developer"],
     loop : true,
     typeSpeed : 100,
     backSpeed : 80,
