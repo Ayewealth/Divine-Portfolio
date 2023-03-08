@@ -169,6 +169,8 @@ let typingEffect = new Typed(".multiText",{
     backDelay : 1000
 })
 
+if(navigator.onLine)
+{
 /*==================== ScrollReveal ====================*/
 const sr = ScrollReveal({
     origin : 'top',
@@ -186,12 +188,12 @@ sr.reveal(`.section__subtitle`, {delay: 500})
 sr.reveal(`.about__container`, {delay: 600, origin: 'left'})
 sr.reveal(`.skills__container`, {delay: 600})
 sr.reveal(`.qualification__container`, {delay: 600})
-sr.reveal(`.services__content`, {delay: 600})
 sr.reveal(`.portfolio__container`, {delay: 600})
 sr.reveal(`.project__bg`, {delay: 600, origin: 'left'})
 sr.reveal(`.testimonial__container`, {delay: 600})
 sr.reveal(`.details`, {delay: 600, origin: 'left'})
 sr.reveal(`.contact__form`, {delay: 600, origin: 'right'})
+}
 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
@@ -211,6 +213,7 @@ if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+
 }
 
 // Activate / deactivate the theme manually with the button
