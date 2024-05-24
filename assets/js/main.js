@@ -196,7 +196,7 @@ if (navigator.onLine) {
   sr.reveal(`.project__bg`, { delay: 600, origin: "left" });
   sr.reveal(`.testimonial__container`, { delay: 600 });
   sr.reveal(`.details`, { delay: 600, origin: "left" });
-  sr.reveal(`.contact__form`, { delay: 600, origin: "right" });
+  // sr.reveal(`.contact__form`, { delay: 600, origin: "right" });
 }
 
 /*==================== DARK LIGHT THEME ====================*/
